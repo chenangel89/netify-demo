@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>簡易通訊錄</title>
+  <link rel="stylesheet" href="static/directory.css">
+  <script src="static/directory.js"></script>
+</head>
+<body>
+  <h1>簡易通訊錄</h1>
+  <form>
+    <label for="name">姓名：</label>
+    <input type="text" placeholder="name" id="name">
+    <label for="phone">電話：</label>
+    <input type="text" placeholder="phone" id="phone">
+    <label for="email">e-mail：</label>
+    <input type="text" placeholder="e-mail" id="email">
+    <button id="new" type="button" onclick="addStudent()">新增</button>
+  </form>
+  <br>
+  <table id="studentTable">
+    <tr>
+    <th>姓名</th>
+      <th>電話</th>
+      <th>e-mail</th>
+      <th>操作</th>
+    </tr>
+    <tr>
+      <td>花花</td>
+      <td>0912345678</td>
+      <td>flower123@gmail.com</td>
+      <td><button id="edit" type="button" onclick="editStudent(this)">編輯</button>
+      <button id="delete" type='button' onclick='deleteRow(this)'>刪除</button>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+ 
